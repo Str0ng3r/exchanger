@@ -1,20 +1,32 @@
 import styles from "./header.module.css";
 import axios from "axios";
-
-import { setEur,setPln,setUsd } from "../../redux/contactSlice";
+import { useDispatch } from "react-redux";
+import {
+  setEur,
+  setPln,
+  setUsd,
+  setCzk,
+  setGel,
+  setRub,
+} from "../../redux/contactSlice";
 import { useEffect, useState } from "react";
 export const Header = () => {
   const [headerVal, setHeaderVal] = useState(null);
-
+  const dispatch = useDispatch();
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
           "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchangenew?json"
         );
+        dispatch(setEur(response.data[31].rate));
+        dispatch(setPln(response.data[32].rate));
+        dispatch(setUsd(response.data[24].rate));
+        dispatch(setCzk(response.data[3].rate));
+        dispatch(setGel(response.data[55].rate));
+        dispatch(setRub(response.data[17].rate));
         setHeaderVal((prevHeaderVal) => {
           if (JSON.stringify(prevHeaderVal) !== JSON.stringify(response.data)) {
-            console.log(response.data);
             return response.data;
           }
           return prevHeaderVal;
@@ -24,7 +36,7 @@ export const Header = () => {
       }
     };
     fetchData();
-  }, [headerVal]);
+  }, [headerVal, dispatch]);
 
   return (
     <header>

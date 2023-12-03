@@ -16,70 +16,70 @@ main {
   gap: 30px;
 }
 .section_valute {
-    padding: 20px;
-    border-radius: 30px;
-    border: #E46E00 solid 1px;
-    width: 340px;
+  padding: 20px;
+  border-radius: 30px;
+  border: #e46e00 solid 1px;
+  width: 340px;
 }
 .name_valute {
-    color: #FFF;
+  color: #fff;
 
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .sect_valut {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .line {
-    display: flex;
-    width: 100%;
-    height: 3px;
-    border-radius: 3px;
-    margin: 10px 0;
-    background-color: #E46E00;;
+  display: flex;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  margin: 10px 0;
+  background-color: #e46e00;
 }
 .input_valt {
-    background-color: #f1e8e8;
-    border: 1ex solid none;
-    margin: 0;
-    padding: 0;
-    color: #383838;
-    word-wrap: break-word;
-    outline: 7px solid #383838;
-    height: 30px;
-    font-size: 17px;
-    text-align: center;
-    transition: all 1s;
-    max-width: 190px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
-    margin: 10px 0;
-   }
-   
-   .input_valt:hover {
-    border-top-width: 0.2em;
-    background-color: #f1e8e8;
-   }
-   
-   .input_valt:focus {
-    border-top-width: 0.2em;
-    background-color: #f1e8e8;
-   }
-   .select_changer {
-    background:transparent;
-    border: #383838 1px solid;
-    padding: 10px;
-    font-size: 24px;
-    border-radius: 10px;
-    font-weight: 700;
-    color: #C1F258;
-    font-family: 'Inter';
-   }
+  background-color: #f1e8e8;
+  border: 1ex solid none;
+  margin: 0;
+  padding: 0;
+  color: #383838;
+  word-wrap: break-word;
+  outline: 7px solid #383838;
+  height: 30px;
+  font-size: 17px;
+  text-align: center;
+  transition: all 1s;
+  max-width: 190px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.input_valt:hover {
+  border-top-width: 0.2em;
+  background-color: #f1e8e8;
+}
+
+.input_valt:focus {
+  border-top-width: 0.2em;
+  background-color: #f1e8e8;
+}
+.select_changer {
+  background: transparent;
+  border: #383838 1px solid;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #c1f258;
+  font-family: "Inter";
+}
