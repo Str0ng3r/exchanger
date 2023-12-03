@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "./main.module.css";
+import styles from "./mainsect.module.css";
 import { useSelector } from "react-redux";
-export const Main = () => {
+export const Mainsect = () => {
   const [currentVal, setCurrentVal] = useState("USD");
   const [countVal, setCountVal] = useState(0);
   const [uaVal, setUaVal] = useState(0);
